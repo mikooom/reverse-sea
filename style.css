@@ -5,6 +5,7 @@ body {
     background-position: center left 5%;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 @font-face {
