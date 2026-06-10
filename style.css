@@ -108,15 +108,14 @@ body {
 }
 
 .nav-container {
-    display: flex;
     width: 200px;
-    border-radius: 4px;
-    margin-top: 50px;
-    margin-left: 50%;
-    padding: 11px 16px;
+    display: flex;
     overflow: hidden;
-    flex-shrink: 0; 
-    letter-spacing: 0.08em;
+    padding: 11px 16px;
+    margin-top: 30px;
+    margin-left: 50%;
+    flex-shrink: 0;
+    border-radius: 7px;
     flex-direction: column;
     background-color: #1c1916;
 }
@@ -127,7 +126,8 @@ body {
     color: #f5f0e8;
     font-size: 14px;
     font-weight: 300;
-    font-family: "myFont";
+    font-family: "DM Sans" sans-serif;
+    line-height: 1;
     align-items: center;
     justify-content: center;
     text-decoration: none;
