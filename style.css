@@ -148,22 +148,23 @@ body {
 }
 
 .info-box {
-    width: 57px;
-    height: 126px;
+    width: 71.25px;
+    height: 157.5px;
     position: relative;
-    background-image: url("assets/char/bg_kapaidi.png");
+    background-image: url("https://assets.merui.net/character/bg_kapaidi.png");
     background-size: 100% 100%;
-    max-width: 57px;
-    max-height: 126px;
+    overflow: hidden;
+    max-width: 71.25px;
+    max-height: 157.5px;
     list-style: none;
 }
 
 .info-box img {
     display: flex;
-    left: 6.42px;
-    top: 4.8px;
-    width: 43.8px;
-    height: 110.4px;
+    left: 8.02px;
+    top: 6px;
+    width: 54.75px;
+    height: 138px;
     position: absolute;
     object-fit: cover;
     object-position: top center;
@@ -172,7 +173,7 @@ body {
 .rarity-overlay {
     position: absolute;
     z-index: 3;
-    top: 6.9px;
+    top: 8.5px; /*6.9px*/
     width: 57px;
     height: 70px;
 }
@@ -189,14 +190,30 @@ body {
 
 .name-overlay {
     position: absolute;
-    z-index: 3;
-    font-family: "myFont" sans-serif;
-    font-size: 10px;
+    display: flex;
+    z-index: 4;
+    font-family: "myFont", sans-serif;
+    font-size: 2px;
     font-weight: 300;
-    top: 70px;
-    left: 30%;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    text-align: center;
     align-items: center;
-    justify-items: center;
+    flex-direction: column;
+}
+
+.name-overlay .name {
+    display: block;
+    line-height: 1;
+    font-size: 8px;
+    white-space: nowrap;
+}
+
+.name-overlay .title {
+    display: block;
+    white-space: nowrap;
+    line-height: 1;
 }
 
 .list-container {

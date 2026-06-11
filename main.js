@@ -61,14 +61,24 @@ const displayList = (chars) => {
   charList.innerHTML = chars
   .sort((a, b) => a.Rarity - b.Rarity)
   .map((char) => {
-    const c = resolve(char)
+    
+    const c = resolve(char);
+    console.log(char)
+    
+    const showTitle = c.name !== c.title
+    
     return `<li>
     
     <div class="info-box">
-      <img src="${c.garments?.insight1}" alt="${c.name}">
+      <img src="${c.garments?.insight1}" alt="${c.title}">
+      
     <div class="name-overlay">
-     <span class="title">${c.title}</span>
-     <span class="name">${c.name}</span>
+    
+    ${showTitle 
+    ? `<span class="name">${c.name}</span><span class="title">${c.title}</span>` 
+    : `<span class="name">${c.title}</span>`
+  }
+
     </div>
     <div class="afflatus-overlay">
       <img src="${c.afflatus}" alt="${char.afflatus}">
