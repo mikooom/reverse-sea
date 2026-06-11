@@ -104,8 +104,8 @@
     "signature": "test",
     "garments": {
       "insight1": "../../assets/characters/headmiddleicon/300901.png",
-      "insight2": "../../assets/characters/headmiddleicon /300902.png"
-}
+      "insight2": "../../assets/characters/headmiddleicon/300902.png"
+      }
   },
   {
     "id": 3009,

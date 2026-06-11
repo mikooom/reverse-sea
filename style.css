@@ -142,7 +142,7 @@ body {
 #char-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1px;
+    gap: 5px;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -183,7 +183,7 @@ body {
 .afflatus-overlay img {
     position: absolute;
     z-index: 3;
-    top: 3px;
+    top: 5px;
     left: 7px;
     width: 12px;
     height: 13.5px;
@@ -195,9 +195,9 @@ body {
     display: flex;
     z-index: 4;
     font-family: "myFont", sans-serif;
-    font-size: 2px;
-    font-weight: 300;
-    bottom: 25px;
+    font-size: 1px;
+    font-weight: 200;
+    bottom: 33px;
     left: 0;
     right: 0;
     text-align: center;
@@ -215,17 +215,23 @@ body {
 }
 
 .list-container {
-    width: 100%;
-    max-width: 700px;
     background: transparent;
     border: 1.5px solid #c85a1a;
     border-top-right-radius: 30px;
-    padding: 30px;
+    padding: 8px 8px 8px 8px;
     height: 100%;
-    width: 100%;
+    width: 115%;
     overflow: hidden;
 }
 
 .list-container h1 {
     color: white;
+}
+
+.insight {
+    padding: 2px;
+    width: 50px;
+    margin-left: 43%;
+    border: 1.5px solid;
+    background-color: #1c1916;
 }
