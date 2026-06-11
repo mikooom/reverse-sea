@@ -169,6 +169,12 @@ body {
     object-position: top center;
 }
 
+.rarity-overlay {
+    position: absolute;
+    top: 6.9px;
+    width: 57px;
+}
+
 .list-container {
     width: 100%;
     background: transparent;

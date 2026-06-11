@@ -1,3 +1,5 @@
+import { afflatusType, rarityValue } from "./data/map/mapping.js";
+
 const popUp = document.getElementById("wip-banner");
 
 const currentDate = document.getElementById("currentDate");
@@ -5,6 +7,7 @@ const currentDate = document.getElementById("currentDate");
 const charList = document.getElementById("char-list");
 
 let character = [];
+
 
 /*
 
@@ -47,21 +50,24 @@ async function loadList() {
 }
 
 const resolve = (char) => ({
-  .char,
-  
+  ...char,
+  afflatus: afflatusType[char.afflatus] ?? char.afflatus,
+  Rarity: rarityValue[char.Rarity] ?? char.Rarity
 })
 
 
 const displayList = (chars) => {
+  
   charList.innerHTML = chars
   .sort((a, b) => a.Rarity - b.Rarity)
   .map((char) => {
+    const c = resolve(char)
     return `<li>
     
     <div class="info-box">
-      <img src="${char.icon}" alt="${char.name}">
+      <img src="${c.icon}" alt="${c.name}">
     <div class="rarity-overlay">
-          <img src="${char.Rarity}" alt="Rarity">
+          <img src="${c.Rarity}" alt="Rarity">
         </div>
     </div>
     
