@@ -66,6 +66,13 @@ const displayList = (chars) => {
     
     <div class="info-box">
       <img src="${c.icon}" alt="${c.name}">
+    <div class="name-overlay">
+     <span class="title">${c.title}</span>
+     <span class="name">${c.name}</span>
+    </div>
+    <div class="afflatus-overlay">
+      <img src="${c.afflatus}" alt="${char.afflatus}">
+      </div>
     <div class="rarity-overlay">
           <img src="${c.Rarity}" alt="Rarity">
         </div>

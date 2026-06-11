@@ -1,10 +1,10 @@
 export const afflatusType = {
-  "Mineral": "../../assets/characters/afflatus/Issx_1.png",
-  "Star": "../../assets/characters/afflatus/Issx_2.png",
-  "Plant": "../../assets/characters/afflatus/Issx_3.png",
-  "Beast": "../../assets/characters/afflatus/Issx_4.png",
-  "Spirit": "../../assets/characters/afflatus/Issx_5.png",
-  "Intellect": "../../assets/characters/afflatus/Issx_6.png"
+  "Mineral": "../../assets/characters/afflatus/lssx_1.png",
+  "Star": "../../assets/characters/afflatus/lssx_2.png",
+  "Plant": "../../assets/characters/afflatus/lssx_3.png",
+  "Beast": "../../assets/characters/afflatus/lssx_4.png",
+  "Spirit": "../../assets/characters/afflatus/lssx_5.png",
+  "Intellect": "../../assets/characters/afflatus/lssx_6.png"
 }
 
 export const rarityValue = {

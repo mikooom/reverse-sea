@@ -171,8 +171,20 @@ body {
 
 .rarity-overlay {
     position: absolute;
+    z-index: 3;
     top: 6.9px;
     width: 57px;
+    height: 70px;
+}
+
+.afflatus-overlay img {
+    position: absolute;
+    z-index: 3;
+    top: 3px;
+    left: 7px;
+    width: 12px;
+    height: 13.5px;
+    object-fit: contain;
 }
 
 .list-container {
