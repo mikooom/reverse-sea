@@ -213,6 +213,7 @@ body {
 .name-overlay .title {
     display: block;
     white-space: nowrap;
+    font-size: 8px;
     line-height: 1;
 }
 
