@@ -65,7 +65,7 @@ const displayList = (chars) => {
     return `<li>
     
     <div class="info-box">
-      <img src="${c.icon}" alt="${c.name}">
+      <img src="${c.garments?.insight1}" alt="${c.name}">
     <div class="name-overlay">
      <span class="title">${c.title}</span>
      <span class="name">${c.name}</span>

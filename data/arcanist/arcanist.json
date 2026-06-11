@@ -12,8 +12,10 @@
     "Birthday": "10/23",
     "Age": "20",
     "signature": "https://static.wikia.nocookie.net/reverse1999/images/7/71/Druvis_III_Signature.png/revision/latest?cb=20230513122916",
-    "icon": "https://res.cloudinary.com/dfrefqclx/image/upload/v1777175065/1000042272_laqpni.webp",
-    "portrait": "https://static.wikia.nocookie.net/reverse1999/images/2/2d/Druvis_III.png/revision/latest?cb=20230517100314"
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300301.png",
+      "insight2": "../../assets/characters/headmiddleicon/300302.png"
+    }
   },
   {
     "id": 3004,
@@ -28,8 +30,10 @@
     "Birthday": "20",
     "Age": "11/14",
     "signature": "https://static.wikia.nocookie.net/reverse1999/images/a/aa/Lilya_Signature.png/revision/latest?cb=20230702033752",
-    "icon": "https://res.cloudinary.com/dfrefqclx/image/upload/v1777175354/300401_sfmtci.webp",
-    "portrait": "https://static.wikia.nocookie.net/reverse1999/images/2/2d/Druvis_III.png/revision/latest?cb=20230517100314"
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300401.png",
+      "insight2": "../../assets/characters/headmiddleicon/300402.png"
+    }
   },
   {
     "id": 3005,
@@ -44,8 +48,10 @@
     "Birthday": "4/30",
     "Age": "20",
     "signature": "https://static.wikia.nocookie.net/reverse1999/images/a/aa/Lilya_Signature.png/revision/latest?cb=20230702033752",
-    "icon": "https://assets.merui.net/character/headicon_middle/300501.webp",
-    "portrait": "https://static.wikia.nocookie.net/reverse1999/images/2/2d/Druvis_III.png/revision/latest?cb=20230517100314"
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300501.png",
+      "insight2": "../../assets/characters/headmiddleicon/300502.png"
+}
   },
   {
     "id": 3006,
@@ -60,8 +66,10 @@
     "Birthday": "7/21",
     "Age": "13",
     "signature": "test",
-    "icon": "https://reverse1999-gnomon.pages.dev/_astro/300601.VGFD7iXG_Z23qE4B.webp",
-    "portrait": "https://static.wikia.nocookie.net/reverse1999/images/2/2d/Druvis_III.png/revision/latest?cb=20230517100314"
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300601.png",
+      "insight2": "../../assets/characters/headmiddleicon/300602.png"
+  }
   },
   {
     "id": 3007,
@@ -76,8 +84,10 @@
     "Birthday": "Unknown",
     "Age": "Unknown",
     "signature": "test",
-    "icon": "https://reverse1999-gnomon.pages.dev/_astro/300701.DWnWCBOr_Z1McqYe.webp",
-    "portrait": "https://static.wikia.nocookie.net/reverse1999/images/2/2d/Druvis_III.png/revision/latest?cb=20230517100314"
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300701.png",
+      "insight2": "../../assets/characters/headmiddleicon/300702.png"
+    }
   },
   {
     "id": 3008,
@@ -92,8 +102,10 @@
     "Birthday": "4/15",
     "Age": "13",
     "signature": "test",
-    "icon": "https://reverse1999-gnomon.pages.dev/_astro/300901.D5lfYzrM_19ER9c.webp",
-    "portrait": "https://static.wikia.nocookie.net/reverse1999/images/2/2d/Druvis_III.png/revision/latest?cb=20230517100314"
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300901.png",
+      "insight2": "../../assets/characters/headmiddleicon /300902.png"
+}
   },
   {
     "id": 3009,
@@ -108,7 +120,9 @@
     "Birthday": "5/30",
     "Age": "16",
     "signature": "test",
-    "icon": "https://reverse1999-gnomon.pages.dev/_astro/301001.D8lMwtYi_ZueDrn.webp",
-    "portrait": "https://static.wikia.nocookie.net/reverse1999/images/2/2d/Druvis_III.png/revision/latest?cb=20230517100314"
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/301001.png",
+      "insight2": "../../assets/characters/headmiddleicon/301002.png"
+    }
   }
 ]

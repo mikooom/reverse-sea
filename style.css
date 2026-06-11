@@ -187,6 +187,18 @@ body {
     object-fit: contain;
 }
 
+.name-overlay {
+    position: absolute;
+    z-index: 3;
+    font-family: "myFont" sans-serif;
+    font-size: 10px;
+    font-weight: 300;
+    top: 70px;
+    left: 30%;
+    align-items: center;
+    justify-items: center;
+}
+
 .list-container {
     width: 100%;
     background: transparent;
