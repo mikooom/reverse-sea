@@ -140,11 +140,12 @@ body {
 }
 
 #char-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 3px;
-    display: flex;
-    flex-wrap: wrap;
     list-style: none;
-    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .info-box {
@@ -203,26 +204,22 @@ body {
     flex-direction: column;
 }
 
-.name-overlay .name {
-    display: block;
-    line-height: 1;
-    font-size: 8px;
-    white-space: nowrap;
-}
 
 .name-overlay .title {
     display: block;
     white-space: nowrap;
     font-size: 8px;
     line-height: 1;
+    color: white;
 }
 
 .list-container {
     width: 100%;
+    max-width: 580px;
     background: transparent;
     border: 1.5px solid #c85a1a;
     border-top-right-radius: 30px;
-    padding: 16px;
+    padding: 30px;
     height: 100%;
     width: 100%;
 }

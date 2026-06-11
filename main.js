@@ -21,12 +21,7 @@ setInterval(() => {
   const day = new Date().getDay();
   const year = new Date().getFullYear();
   
-  const shortenDay = new Intl.DateTimeFormat(undefined, { weekday: "short" }).format(new Date())
-  
-  currentDate
-
-
-
+  const shortenDay = new Intl.DateTimeFormat(undefined, { weekday: "short" }).format(new Date());
 
 if(sessionStorage.getItem("banner_hide")) {
   popUp.style.visibility = "hidden";
@@ -38,10 +33,12 @@ function hidePopUp() {
 }
 
 async function loadList() {
+  console.log("charList element:", charList);
   
   const [crewRes] = await Promise.all([
     fetch("../data/arcanist/arcanist.json")
   ])
+  console.log("fetch status:", crewRes.status)
   const crew = await crewRes.json();
   character = crew;
   console.log(character)
@@ -55,7 +52,6 @@ const resolve = (char) => ({
   Rarity: rarityValue[char.Rarity] ?? char.Rarity
 })
 
-
 const displayList = (chars) => {
   
   charList.innerHTML = chars
@@ -63,33 +59,24 @@ const displayList = (chars) => {
   .map((char) => {
     
     const c = resolve(char);
-    console.log(char)
-    
-    const showTitle = c.name !== c.title
     
     return `<li>
-    
-    <div class="info-box">
-      <img src="${c.garments?.insight1}" alt="${c.title}">
-      
+  <div class="info-box">
+    <img src="${c.garments?.insight1}" alt="${c.title}">
     <div class="name-overlay">
-    
-    ${showTitle 
-    ? `<span class="name">${c.name}</span><span class="title">${c.title}</span>` 
-    : `<span class="name">${c.title}</span>`
-  }
-
+      <span class="title">${c.title}</span>
     </div>
     <div class="afflatus-overlay">
       <img src="${c.afflatus}" alt="${char.afflatus}">
-      </div>
-    <div class="rarity-overlay">
-          <img src="${c.Rarity}" alt="Rarity">
-        </div>
     </div>
-    
-    </li>`
-  }).join("")
-}
+    <div class="rarity-overlay">
+      <img src="${c.Rarity}" alt="Rarity">
+    </div>
+  </div>
+</li>`
+  }).join("");
+};
 
-loadList();
+document.addEventListener("DOMContentLoaded", () => {
+  loadList();
+});
