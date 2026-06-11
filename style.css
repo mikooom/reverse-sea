@@ -142,10 +142,11 @@ body {
 #char-list {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 3px;
+    gap: 2px;
     list-style: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .info-box {
@@ -222,6 +223,7 @@ body {
     padding: 30px;
     height: 100%;
     width: 100%;
+    overflow: hidden;
 }
 
 .list-container h1 {
