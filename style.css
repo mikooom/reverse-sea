@@ -111,24 +111,30 @@ body {
     width: 200px;
     display: flex;
     overflow: hidden;
-    padding: 11px 16px;
     margin-top: 30px;
     margin-left: 50%;
-    flex-shrink: 0;
-    border-radius: 7px;
     flex-direction: column;
-    background-color: #1c1916;
 }
+
+.nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 
 .nav-items a {
     gap: 12px;
     display: flex;
     color: #f5f0e8;
+    padding: 11px 16px;
     font-size: 14px;
-    font-weight: 300;
-    font-family: "DM Sans" sans-serif;
     line-height: 1;
+    font-weight: 300;
+    flex-shrink: 0;
+    border-radius: 6px;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     text-decoration: none;
+    background-color: #1c1916;
 }
