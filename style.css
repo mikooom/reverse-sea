@@ -138,3 +138,47 @@ body {
     text-decoration: none;
     background-color: #1c1916;
 }
+
+#char-list {
+    gap: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+}
+
+.info-box {
+    width: 57px;
+    height: 126px;
+    position: relative;
+    background-image: url("assets/char/bg_kapaidi.png");
+    background-size: 100% 100%;
+    max-width: 57px;
+    max-height: 126px;
+    list-style: none;
+}
+
+.info-box img {
+    display: flex;
+    left: 6.42px;
+    top: 4.8px;
+    width: 43.8px;
+    height: 110.4px;
+    position: absolute;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.list-container {
+    width: 100%;
+    background: transparent;
+    border: 1.5px solid #c85a1a;
+    border-top-right-radius: 30px;
+    padding: 16px;
+    height: 100%;
+    width: 100%;
+}
+
+.list-container h1 {
+    color: white;
+}

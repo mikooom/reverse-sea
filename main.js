@@ -1,6 +1,10 @@
 const popUp = document.getElementById("wip-banner");
 
-const currentDate = document.getElementById("currentDate")
+const currentDate = document.getElementById("currentDate");
+
+const charList = document.getElementById("char-list");
+
+let character = [];
 
 /*
 
@@ -30,3 +34,39 @@ function hidePopUp() {
   popUp.style.visibility = "hidden";
 }
 
+async function loadList() {
+  
+  const [crewRes] = await Promise.all([
+    fetch("../data/arcanist/arcanist.json")
+  ])
+  const crew = await crewRes.json();
+  character = crew;
+  console.log(character)
+  
+  displayList(character);
+}
+
+const resolve = (char) => ({
+  .char,
+  
+})
+
+
+const displayList = (chars) => {
+  charList.innerHTML = chars
+  .sort((a, b) => a.Rarity - b.Rarity)
+  .map((char) => {
+    return `<li>
+    
+    <div class="info-box">
+      <img src="${char.icon}" alt="${char.name}">
+    <div class="rarity-overlay">
+          <img src="${char.Rarity}" alt="Rarity">
+        </div>
+    </div>
+    
+    </li>`
+  }).join("")
+}
+
+loadList();
