@@ -1,0 +1,122 @@
+body {
+  font-family: "DM Sans", sans-serif;
+    /*margin: 0;*/
+    background-image: url("assets/bg/mainsceneswitch_randombg01.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "webfont"; 
+  src: url("assets/web/regular-webfont.DXccI02O.woff2");
+}
+
+#char-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3px;
+    padding: 0;
+    max-width: 300px;
+    list-style: none;
+    margin: 0 auto;
+}
+
+.info-box {
+    width: 57px;
+    height: 126px;
+    position: relative;
+    background-image: url("assets/characters/bg_kapaidi.png");
+    background-size: 100% 100%;
+    overflow: hidden;
+    max-width: 57px;
+    max-height: 126px;
+    align-items: center;
+}
+
+.info-box img {
+    display: flex;
+    left: 6.12px;
+    top: 4.8px;
+    width: 43.8px;
+    height: 110.4px;
+    position: absolute;
+    object-fit: cover;
+    object-position: top center;
+}
+
+.rarity-overlay {
+    position: absolute;
+    z-index: 3;
+    top: 6.9px; /*6.9px*/
+    width: 57.6px;
+    height: 70px;
+}
+
+.afflatus-overlay img {
+    position: absolute;
+    z-index: 3;
+    top: 4px;
+    left: 6px;
+    width: 12px;
+    height: 13.5px;
+    object-fit: contain;
+}
+
+.char-info {
+  position: absolute;
+  bottom: 0;
+  top: 84px;
+  left: 28.3px;
+  font-family: "webfont", sans-serif;
+  transform: translateX(-50%) scale(0.3);
+  text-align: center;
+  white-space: nowrap;
+  z-index: 4;
+}
+
+.char-name {
+    color: #D8B6A3;
+}
+
+.char-title {
+  color: #FFFFFE; 
+}
+
+.char-name, .char-title {
+  display: block;
+  font-size: 13.6px;
+  margin: 0;
+}
+
+.list-container {
+    background: rgba(0, 0, 0, 0.9);
+    border: 1.5px solid #c85a1a;
+    border-top-right-radius: 30px;
+    padding: 10px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.list-value {
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.list-container h1 {
+    color: white;
+}
+
+#refresh-btn {
+    color: white;
+    border: 1.5px solid transparent;
+    width: 30px;
+    background-color: #1c1916;
+}

@@ -22,6 +22,15 @@ setInterval(() => {
   const year = new Date().getFullYear();
   
   const shortenDay = new Intl.DateTimeFormat(undefined, { weekday: "short" }).format(new Date());
+  
+async function refreshBtn() {
+  
+  const refreshBtn = document.getElementById("refresh-btn");
+  
+  refreshBtn.addEventListener("click", () => {
+    location.reload();
+  })
+}
 
 if(sessionStorage.getItem("banner_hide")) {
   popUp.style.visibility = "hidden";
@@ -55,7 +64,7 @@ const resolve = (char) => ({
 const displayList = (chars) => {
   
   charList.innerHTML = chars
-  .sort((a, b) => a.Rarity - b.Rarity)
+  .sort((a, b) => b.Rarity - a.Rarity)
   .map((char) => {
     
     const c = resolve(char);
@@ -63,15 +72,16 @@ const displayList = (chars) => {
     return `<li>
   <div class="info-box">
     <img id="insightGarment" src="${c.garments?.insight1}" alt="${c.title}">
-    <div class="name-overlay">
-      <span class="title">${c.title}</span>
-    </div>
     <div class="afflatus-overlay">
       <img src="${c.afflatus}" alt="${char.afflatus}">
     </div>
     <div class="rarity-overlay">
       <img src="${c.Rarity}" alt="Rarity">
     </div>
+    <div class="char-info">
+          ${c.name !== c.title ? `<span class="char-name">${c.name}</span>` : ""}
+          <span class="char-title">${c.title}</span>
+        </div>
   </div>
 </li>`
   }).join("");

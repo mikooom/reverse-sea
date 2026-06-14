@@ -1,75 +1,21 @@
 [
   {
-    "id": 3003,
-    "name": "Druvis III Weyerhaeuser",
-    "title": "Druvis III",
+    "id": 3008,
+    "name": "Sotheby",
+    "title": "Sotheby",
     "afflatus": "Plant",
-    "DMG_TYPE": "Mental",
-    "Gender": "Female",
-    "Rarity": 6,
-    "Race": "Arcanist",
-    "Tags": ["DPS", "Control", "Support"],
-    "Birthday": "10/23",
-    "Age": "20",
-    "signature": "https://static.wikia.nocookie.net/reverse1999/images/7/71/Druvis_III_Signature.png/revision/latest?cb=20230513122916",
-    "garments": {
-      "insight1": "../../assets/characters/headmiddleicon/300301.png",
-      "insight2": "../../assets/characters/headmiddleicon/300302.png"
-    }
-  },
-  {
-    "id": 3004,
-    "name": "Lilya",
-    "title": "Lilya",
-    "afflatus": "Star",
     "DMG_TYPE": "Reality",
     "Gender": "Female",
     "Rarity": 6,
     "Race": "Arcanist",
-    "Tags": ["Burst Damage", "DPS"],
-    "Birthday": "20",
-    "Age": "11/14",
-    "signature": "https://static.wikia.nocookie.net/reverse1999/images/a/aa/Lilya_Signature.png/revision/latest?cb=20230702033752",
-    "garments": {
-      "insight1": "../../assets/characters/headmiddleicon/300401.png",
-      "insight2": "../../assets/characters/headmiddleicon/300402.png"
-    }
-  },
-  {
-    "id": 3005,
-    "name": "Nick Bottom",
-    "title": "Nick Bottom",
-    "afflatus": "Beast",
-    "DMG_TYPE": "Mental",
-    "Gender": "Male",
-    "Rarity": 4,
-    "Race": "Arcanist",
-    "Tags": ["Support"],
-    "Birthday": "4/30",
-    "Age": "20",
-    "signature": "https://static.wikia.nocookie.net/reverse1999/images/a/aa/Lilya_Signature.png/revision/latest?cb=20230702033752",
-    "garments": {
-      "insight1": "../../assets/characters/headmiddleicon/300501.png",
-      "insight2": "../../assets/characters/headmiddleicon/300502.png"
-}
-  },
-  {
-    "id": 3006,
-    "name": "Eagle",
-    "title": "Eagle",
-    "afflatus": "Plant",
-    "DMG_TYPE": "Reality",
-    "Gender": "Female",
-    "Rarity": 4,
-    "Race": "Arcanist",
-    "Tags": ["Burst DMG", "DPS"],
-    "Birthday": "7/21",
+    "Tags": ["Poison", "Heal", "DPS"],
+    "Birthday": "4/15",
     "Age": "13",
     "signature": "test",
     "garments": {
-      "insight1": "../../assets/characters/headmiddleicon/300601.png",
-      "insight2": "../../assets/characters/headmiddleicon/300602.png"
-  }
+      "insight1": "../../assets/characters/headmiddleicon/300901.png",
+      "insight2": "../../assets/characters/headmiddleicon/300902.png"
+    }
   },
   {
     "id": 3007,
@@ -90,22 +36,40 @@
     }
   },
   {
-    "id": 3008,
-    "name": "Sotheby",
-    "title": "Sotheby",
-    "afflatus": "Plant",
+    "id": 3004,
+    "name": "Lilya",
+    "title": "Lilya",
+    "afflatus": "Star",
     "DMG_TYPE": "Reality",
     "Gender": "Female",
     "Rarity": 6,
     "Race": "Arcanist",
-    "Tags": ["Poison", "Heal", "DPS"],
-    "Birthday": "4/15",
-    "Age": "13",
-    "signature": "test",
+    "Tags": ["Burst Damage", "DPS"],
+    "Birthday": "11/14",
+    "Age": "20",
+    "signature": "https://static.wikia.nocookie.net/reverse1999/images/a/aa/Lilya_Signature.png/revision/latest?cb=20230702033752",
     "garments": {
-      "insight1": "../../assets/characters/headmiddleicon/300901.png",
-      "insight2": "../../assets/characters/headmiddleicon/300902.png"
-      }
+      "insight1": "../../assets/characters/headmiddleicon/300401.png",
+      "insight2": "../../assets/characters/headmiddleicon/300402.png"
+    }
+  },
+  {
+    "id": 3003,
+    "name": "Druvis III Weyerhaeuser",
+    "title": "Druvis III",
+    "afflatus": "Plant",
+    "DMG_TYPE": "Mental",
+    "Gender": "Female",
+    "Rarity": 6,
+    "Race": "Arcanist",
+    "Tags": ["DPS", "Control", "Support"],
+    "Birthday": "10/23",
+    "Age": "20",
+    "signature": "https://static.wikia.nocookie.net/reverse1999/images/7/71/Druvis_III_Signature.png/revision/latest?cb=20230513122916",
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300301.png",
+      "insight2": "../../assets/characters/headmiddleicon/300302.png"
+    }
   },
   {
     "id": 3009,
@@ -123,6 +87,42 @@
     "garments": {
       "insight1": "../../assets/characters/headmiddleicon/301001.png",
       "insight2": "../../assets/characters/headmiddleicon/301002.png"
+    }
+  },
+  {
+    "id": 3006,
+    "name": "Eagle",
+    "title": "Eagle",
+    "afflatus": "Plant",
+    "DMG_TYPE": "Reality",
+    "Gender": "Female",
+    "Rarity": 4,
+    "Race": "Arcanist",
+    "Tags": ["Burst DMG", "DPS"],
+    "Birthday": "7/21",
+    "Age": "13",
+    "signature": "test",
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300601.png",
+      "insight2": "../../assets/characters/headmiddleicon/300602.png"
+    }
+  },
+  {
+    "id": 3005,
+    "name": "Nick Bottom",
+    "title": "Nick Bottom",
+    "afflatus": "Beast",
+    "DMG_TYPE": "Mental",
+    "Gender": "Male",
+    "Rarity": 4,
+    "Race": "Arcanist",
+    "Tags": ["Support"],
+    "Birthday": "4/30",
+    "Age": "20",
+    "signature": "https://static.wikia.nocookie.net/reverse1999/images/a/aa/Lilya_Signature.png/revision/latest?cb=20230702033752",
+    "garments": {
+      "insight1": "../../assets/characters/headmiddleicon/300501.png",
+      "insight2": "../../assets/characters/headmiddleicon/300502.png"
     }
   }
 ]
