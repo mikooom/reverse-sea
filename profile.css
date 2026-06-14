@@ -120,3 +120,17 @@ body {
     width: 30px;
     background-color: #1c1916;
 }
+
+@media (min-width: 1024px) {
+    .list-container {
+        width: calc(100vw - 200px);
+        min-height: calc(100vh - 100px);
+        margin: 50px auto;
+    }
+
+    #char-list {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        gap: 6px;
+    }
+}
