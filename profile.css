@@ -125,26 +125,38 @@ body {
 
 @media (min-width: 1366px) {
     .info-box {
-        width: 95px;
-        height: 210px;
-        max-width: 95px;
-        max-height: 210px;
+        aspect-ratio: 95 / 210;
+        width: 100%;
+        max-width: none;
     }
+
     .info-box img {
-        left: 10.7px;
-        top: 8px;
-        width: 73px;
-        height: 184px;
+        left: 11.3%;    /* 10.7 / 95 */
+        top: 3.8%;      /* 8 / 210 */
+        width: 76.8%;   /* 73 / 95 */
+        height: 87.6%;  /* 184 / 210 */
     }
+
     .rarity-overlay {
-        top: 6.9px;
-        width: 95px;
-        height: 116px;
+        top: 3.3%;      /* 6.9 / 210 */
+        width: 100%;
+        height: 55.2%;  /* 116 / 210 */
     }
+
     .char-info {
-        top: 84px;
-        left: 28.3px;
+        top: 40%;       /* 84 / 210 */
+        left: 50%;
+        transform: translateX(-50%) scale(0.3);
     }
-    #char-list { max-width: 500px; }
-    .list-container { max-width: fit-content; }
+
+    #char-list {
+        max-width: 100%;
+        width: 100%;
+        list-style: none;
+    }
+
+    .list-container {
+        width: 95%;
+        max-width: 95%;
+    }
 }
